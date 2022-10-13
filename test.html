@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        HTML DOM Input Text value Property
+    </title>
+</head>
+<body style="text-align:center;">
+    <h1>GeeksForGeeks</h1>
+    <h2>DOM Input Text value Property</h2>
+    <input type="text" id="text_id" value="Hello Geeks!" style="border:2px solid #003cff" >
+    <button onclick="myGeeks()">Click Here!</button>
+    <h1 id="GFG"></h1>
+ 
+     
+    <!-- Script to return the Input Text value Property-->
+    <script>
+        function myGeeks() {
+            var txt = document.getElementById("text_id").value;
+            document.getElementById("GFG").innerHTML = txt;
+        }
+    </script>
+
+
+<div class="form">
+    <label for="product_name">Name</label>
+    <input id="product_name" name="product[name]" size="30" type="text" value="4">
+    <label for="product_stock">Stock</label>
+    <input id="product_stock" name="product[stock]" size="30" type="text" value="-1">
+    <label for="price_amount">Amount</label>
+    <input id="price_amount" name="price[amount]" size="30" type="text" value="6.0">
+</div>
+
+
+</body>
+</html>
